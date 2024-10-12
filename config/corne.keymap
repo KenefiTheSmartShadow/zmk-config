@@ -30,13 +30,13 @@
             // -----------------------------------------------------------------------------------------
             //       |  TAB |  1  |  2  |  3  |  4  |  5  |    |     |  HM |  UP | END | PGU | BSPC |
             //       | SHFT |  6  |  7  |  8  |  9  |  0  |    |     | LFT | DWN | RGT | PGD |  ~   |
-            //       | CTRL |     |     |     |     |     |    |     |     |     |     |     | ESC  |
+            //       | CTRL |     |     |     |     |     |    |     |     |     |     |  \  | ESC  |
             //                          | GUI |     | SPC |    | ENT |     | ALT |
 
             bindings = <
 &kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &trans   &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp BSPC
 &kp LSHFT  &kp N6  &kp N7  &kp N8    &kp N9  &kp N0       &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &kp GRAVE
-&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &trans   &trans    &trans    &trans     &trans     &trans
+&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &trans   &trans    &trans    &kp BSLH   &trans     &trans
                            &kp LGUI  &trans  &kp SPACE    &kp RET  &trans    &kp RALT
             >;
         };
